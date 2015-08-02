@@ -88,6 +88,10 @@ body {
     padding: 3% 0;
 }
 
+.featurette .container {
+    border-radius: 6px
+}
+
 .featurette-image.pull-left {
     margin-right: 40px;
 }
@@ -105,12 +109,16 @@ footer {
 }
 
 div#about {
-    padding: 6% 0 3%;
-    background-image: url(../images/arcade/r12.jpg);
+    background-image: url(../images/arcade/r1.jpg);
     background-size: cover;
-    background-position: 50% 30%;
-    border-top: 5px solid #222;
+    background-attachment: fixed;
+    /* border-top: 5px solid #222; */
+    
     color: #fff;
+}
+
+div#about .container {
+    background-color: rgba(0, 0, 0, 0.8)
 }
 
 div#about img {
@@ -118,17 +126,45 @@ div#about img {
 }
 
 div#about h2 {
-    color: greenyellow
+    text-shadow: 1px 1px #090
 }
 
 div#services {
-    background: #59323C;
+    background-image: url(../images/arcade/r1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    /* border-top: 5px solid #222; */
+    
+    color: #000;
+}
+
+div#services .container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+
+div#services .container img {
+    height: 200px
+}
+
+div#contact {
+    background-image: url(../images/arcade/z1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    /* border-top: 5px solid #222; */
+    
     color: #fff;
+}
+
+div#contact .container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
 }
 
 .featurette-heading {
     font-size: 45px;
-    margin-bottom: 3%;
+    margin-bottom: 1%;
+    text-align: center;
 }
 
 div#services @media(max-width:1200px) {
